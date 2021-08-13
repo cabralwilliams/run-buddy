@@ -122,3 +122,15 @@ section {
     padding: 10px 20px;
     font-size: 16px;
 }
+
+#what-you-do {
+    background-color: #fce138;
+}
+
+#what-you-do div {
+    text-align: center;
+}
+
+.wyd-svg {
+    width: 300px;
+}
