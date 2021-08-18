@@ -316,6 +316,12 @@ section {
     color: #fce138;
 }
 
+.contact-info {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
 .contact-info iframe {
     height: 400px;
     width: 400px;
@@ -338,12 +344,30 @@ section {
 .contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
 }
   
 .contact-info a {
     color: #fce138;
+}
+
+.contact-info input, .contact-info button, .contact-info textarea {
+    width: 90%;
+    margin: 3px auto;
+    line-height: 2;
+    border: 1px solid #024e76;
+    font-size: 16px;
+}
+
+.contact-info button {
+    background-color: #fce138;
+    border: none;
+    color: #024e76;
+}
+
+.contact-info-address, .contact-info iframe, .contact-form {
+    flex: 1;
 }
 
 .hero-secondary {
