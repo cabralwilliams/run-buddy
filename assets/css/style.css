@@ -16,6 +16,14 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 header h1 {
@@ -23,7 +31,7 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -47,6 +55,14 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
 }
 /*Header Ends*/
 
@@ -93,6 +109,8 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     /*align-items: flex-start;*/
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 .hero-form {
@@ -103,6 +121,9 @@ section {
     width: 40%;
     color: #024e76;
     margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 80%;
+    border-radius: 15px;
     /*
     position: absolute;
     bottom: 120px;
@@ -127,6 +148,13 @@ section {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+}
+
+.form-input:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
 }
 
 .hero-form label {
@@ -139,6 +167,11 @@ section {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    border-radius: 10px;
+}
+
+.hero-form button:hover {
+    background-color: #39a6b2;  
 }
 
 #name, #email, #phone {
@@ -158,6 +191,7 @@ section {
     font-style: italic;
     color: #fce138;
     font-size: 55px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .habits p {
@@ -224,6 +258,10 @@ section {
 
 .step-img img {
     max-width: 100%;
+}
+
+.step:last-child {
+    border-bottom: none;
 }
 /*Steps info ends*/
 
@@ -367,6 +405,7 @@ section {
     line-height: 2;
     border: 1px solid #024e76;
     font-size: 16px;
+    border-radius: 10px;
 }
 
 .contact-info button {
@@ -377,6 +416,20 @@ section {
 
 .contact-info-address, .contact-info iframe, .contact-form {
     flex: 1;
+}
+
+.contact-info input, .contact-info textarea {
+    background-color: rgba(255,255,255, 0.75);
+}
+
+.contact-info input:focus, .contact-info textarea:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+}
+
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
 }
 
 .hero-secondary {
@@ -392,6 +445,7 @@ section {
     header {
         padding-bottom: 0;
         justify-content: center;
+        position: relative;
     }
     
     header h1 {
